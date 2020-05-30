@@ -292,7 +292,6 @@ public class AddHotel extends javax.swing.JFrame {
     }//GEN-LAST:event_hCodeActionPerformed
 
     private void runHotelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_runHotelButtonActionPerformed
-
         String hotelName = hName.getText();
         if (!hotelName.isEmpty()) {
             if (hotelCode > 4) {
@@ -321,11 +320,10 @@ public class AddHotel extends javax.swing.JFrame {
             if (!roomName.isEmpty()) {
                 testHomeStay.addRoom(roomCode, roomName);
                 list += testHomeStay.getPrint();
-                jTextArea1.setText(list);
-     
+                jTextArea1.setText(list);     
                 rName.setText("");
             } else {
-                JOptionPane.showMessageDialog(null, "請輸入飯店名稱!");
+                JOptionPane.showMessageDialog(null, "請輸入房間名稱!");
             }
         } else {
             JOptionPane.showMessageDialog(null, "請輸入正確的飯店代號!");
@@ -337,11 +335,11 @@ public class AddHotel extends javax.swing.JFrame {
     }//GEN-LAST:event_rCodeActionPerformed
 
     private void hNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hNameActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_hNameActionPerformed
 
     private void rNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rNameActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_rNameActionPerformed
 
     private void rNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_rNameKeyPressed
@@ -371,11 +369,7 @@ public class AddHotel extends javax.swing.JFrame {
         return true;
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -397,8 +391,6 @@ public class AddHotel extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(AddHotel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new AddHotel().setVisible(true);
